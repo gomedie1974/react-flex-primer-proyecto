@@ -1,4 +1,6 @@
 import './NavBar.css'
+import Carrito from "../Carrito/Carrito";
+
 
 function NavBar() {
   return (
@@ -6,14 +8,13 @@ function NavBar() {
         <nav className='nav-bar'>
             <p>LOGO</p>
           <ul className='nav-bar-items'> 
-            <li>Inicio</li>
-            <li>Productos</li>
-            <li>Contacto</li>
-            <li>Contacto</li>
+            <li><button className='btn btn-primary'>Inicio</button>
+            </li>
+            <li><button className='btn btn-secondary'>Productos</button></li>
+            <li><button className='btn btn-secondary'>Contacto</button></li>              
           </ul>
-          <p>Carrito(7)</p>
+          <p><button className='btn btn-danger'><Carrito /></button></p>
         </nav>
-        <button className='btn btn-primary'>Inicio</button>
       </header>  
    )
 }
