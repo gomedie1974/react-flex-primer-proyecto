@@ -1,9 +1,10 @@
+
 import './Carrito.css'
 
 function Carrito() {
   return (
      <header>
-        <p className='carrito'>Carrito(7) </p>
+         <button className='carrito btn btn-danger' ><i class="bi bi-cart4"></i>7</button>
       </header>  
    )
 }

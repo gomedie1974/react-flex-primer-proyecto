@@ -1,9 +1,7 @@
-.carrito{
-  display: flex;
-  height: 0.2rem;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.2rem;
-  }
+.carrito {
+  display: flex; /* Activa Flexbox */
+  align-items: center; /* Alinea verticalmente */
+  gap: 10px; /* Espacio entre el carrito y el número */
+  font-size: 20px; /* Ajusta el tamaño para ambos */
   
+}

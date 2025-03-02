@@ -1,13 +1,13 @@
 import './App.css'
 import NavBar from './components/NavBar/NavBar';
-import Carrito from './components/Carrito/Carrito';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
   
 function App() {
   
   return (
     <>  
      <NavBar/>
-          
      </>
   )
 }
