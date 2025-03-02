@@ -1,0 +1,16 @@
+.nav-bar{
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  
+  .nav-bar-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+  } 
