@@ -1,9 +1,9 @@
 body {
-    margin: 0; /* Elimina márgenes por defecto */
-    height: 100vh; /* Hace que el body ocupe toda la pantalla */
-    background-image: url('/fondo.jpg'); /* Ruta de tu imagen */
+    margin: 0; /* Elimina todos los márgenes por defecto */
+    height: 100vh; /* para que el body ocupe toda la pantalla */
+    background-image: url('/fondo.jpg');  
     background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* que no se repita la imagen */
   }
   

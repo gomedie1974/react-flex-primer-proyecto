@@ -2,6 +2,6 @@
   display: flex; /* Activa Flexbox */
   align-items: center; /* Alinea verticalmente */
   gap: 10px; /* Espacio entre el carrito y el número */
-  font-size: 20px; /* Ajusta el tamaño para ambos */
-  
+  font-size: 15px; /* Ajusta el tamaño para ambos */    
+  margin-bottom: 30%;
 }
