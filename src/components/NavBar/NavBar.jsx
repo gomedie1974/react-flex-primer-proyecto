@@ -1,5 +1,5 @@
 import './NavBar.css'
-import Carrito from "../Carrito/Carrito";
+import CartWidget from "../CartWidget/CartWidget";
 import Logo from "../Logo/Logo";
 
 
@@ -12,10 +12,10 @@ function NavBar() {
            <ul className='nav-bar-items'> 
             <li><button className='btn btn-primary'>Inicio</button>
             </li>
-            <li><button className='btn btn-secondary'>Productos</button></li>
-            <li><button className='btn btn-secondary'>Contacto</button></li>              
+            <li><button className='btn btn-secondary'><span style={{color:'black'}}>Productos</span></button></li>
+            <li><button className='btn btn-secondary'><span style={{color:'black'}}>Contacto</span></button></li>              
           </ul>
-          <span><Carrito/></span>
+          <span><CartWidget/></span>
         </nav>
       </header>  
    )

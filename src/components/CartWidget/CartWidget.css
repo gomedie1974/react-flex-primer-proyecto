@@ -1,4 +1,4 @@
-.carrito {
+.CartWidget {
   display: flex; /* Activa Flexbox */
   align-items: center; /* Alinea verticalmente */
   gap: 10px; /* Espacio entre el carrito y el número */
