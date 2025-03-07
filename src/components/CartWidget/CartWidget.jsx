@@ -1,11 +1,15 @@
 import './CartWidget.css'
+import { BsCart4 } from "react-icons/bs";
 
 function CartWidget() {
   return (
      <header>
-         <button className='CartWidget btn btn-danger' ><i className="bi bi-cart4"></i>7</button>
+        <span className='CartWidget'>
+          <BsCart4 />
+          <span className='CartWidgetNumber'>45</span>
+        </span>
       </header>  
-   )
+  );
 }
 
-export default CartWidget
+export default CartWidget;

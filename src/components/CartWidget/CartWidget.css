@@ -1,7 +1,22 @@
 .CartWidget {
-  display: flex; /* Activa Flexbox */
-  align-items: center; /* Alinea verticalmente */
-  gap: 10px; /* Espacio entre el carrito y el número */
-  font-size: 15px; /* Ajusta el tamaño para ambos */    
-  margin-bottom: 30%;
+  position: relative; /* Esto nos permitirá posicionar el número sobre el ícono */
+  display: flex; /* Activar flexbox */
+  justify-content: center; /* Centra el ícono horizontalmente */
+  align-items: center; /* Centra el ícono verticalmente */
+  font-size: 40px; /* Ajusta el tamaño del ícono */
+}
+
+.CartWidgetNumber {
+  position: absolute; /* Esto coloca el número de manera absoluta dentro del contenedor del ícono */
+  top: -10px; /* Ajusta la posición vertical del número (puedes modificar esto para mejor ajuste) */
+  right: 5px; /* Ajusta la posición horizontal del número (puedes modificar esto para mejor ajuste) */
+  background-color: red; /* Fondo para hacer que el número sea visible */
+  color: white; /* Color del número */
+  border-radius: 50%; /* Hace el fondo circular */
+  width: 25px; /* Tamaño del círculo */
+  height: 25px; /* Tamaño del círculo */
+  display: flex;
+  justify-content: center; /* Centra el número horizontalmente */
+  align-items: center; /* Centra el número verticalmente */
+  font-size: 12px; /* Tamaño del número */
 }
