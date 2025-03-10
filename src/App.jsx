@@ -1,4 +1,5 @@
 import './App.css'
+//import ItemCount from './components/ItemCount/ItemCount';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import NavBar from './components/NavBar/NavBar';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -6,6 +7,25 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
   
 function App() {
   
+
+  return (
+    <>  
+     <NavBar/>
+     <ItemListContainer greetings=" Bienvenidos a AllinShop"/>
+     <ItemListContainer greetings1=" Descubre nuestros productos con los mejores precios."/>
+      {/* <h1>{nombreDelProfe}</h1> */}
+      {/* <ItemCount stock={5} nombreDelProducto="Mesa" />
+      <ItemCount stock={15} nombreDelProducto="Silla" />
+      <ItemCount stock={9} nombreDelProducto="Escritorio" /> */}
+
+     </>
+  )
+}
+
+export default App
+
+
+
     // const nombreDelProfe = "Lucas";
 
   // const array = [1, 2, 3];
@@ -45,15 +65,3 @@ function App() {
   // console.log("Este es mi segundo número", segundoNumero);
   // console.log("Este es mi tercer número", tercerNumero);
 
-
-
-  return (
-    <>  
-     <NavBar/>
-     <ItemListContainer greetings=" Mensaje"/>
-
-     </>
-  )
-}
-
-export default App

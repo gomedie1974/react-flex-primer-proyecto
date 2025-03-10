@@ -12,8 +12,8 @@ function NavBar() {
            <ul className='nav-bar-items'> 
             <li><button className='btn btn-primary'>Inicio</button>
             </li>
-            <li><button className='btn btn-secondary'><span style={{color:'black'}}>Productos</span></button></li>
-            <li><button className='btn btn-secondary'><span style={{color:'black'}}>Contacto</span></button></li>              
+            <li><button className='btn btn-secondary'><span style={{color:'white'}}>Productos</span></button></li>
+            <li><button className='btn btn-secondary'><span style={{color:'white'}}>Contacto</span></button></li>              
           </ul>
           <span><CartWidget/></span>
         </nav>

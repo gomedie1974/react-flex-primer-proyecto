@@ -1,8 +1,12 @@
  import './ItemListContainer.css';
  
-function ItemListContainer({greetings}) {
+function ItemListContainer({greetings, greetings1 }) {
     return (
-        <h1>{greetings}</h1>
+        <div>
+            <div className="greetings-text">{greetings}</div>
+            <div className="greetings1-text">{greetings1}</div>
+        </div>
+  
         );
 };
 

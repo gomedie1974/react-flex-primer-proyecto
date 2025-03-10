@@ -1,9 +1,10 @@
 .CartWidget {
   position: relative; /* Esto nos permitirá posicionar el número sobre el ícono */
   display: flex; /* Activar flexbox */
+  top: -10px; /* Ajusta la posición vertical del número (puedes modificar esto para mejor ajuste) */
   justify-content: center; /* Centra el ícono horizontalmente */
   align-items: center; /* Centra el ícono verticalmente */
-  font-size: 40px; /* Ajusta el tamaño del ícono */
+  font-size: 35px; /* Ajusta el tamaño del ícono */
 }
 
 .CartWidgetNumber {
@@ -14,7 +15,7 @@
   color: white; /* Color del número */
   border-radius: 50%; /* Hace el fondo circular */
   width: 25px; /* Tamaño del círculo */
-  height: 25px; /* Tamaño del círculo */
+  height: 20px; /* Tamaño del círculo */
   display: flex;
   justify-content: center; /* Centra el número horizontalmente */
   align-items: center; /* Centra el número verticalmente */

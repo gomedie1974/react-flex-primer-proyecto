@@ -1,0 +1,15 @@
+.greetings-text {
+    font-size: 2rem;  
+    color: #ff5733;  
+    text-align: center;  
+    margin-top: 50px;  
+    font-weight: bold;  
+  }
+  
+  .greetings1-text{
+    font-size: 2rem;
+    color: #555;
+    text-align: center;
+    margin-top: 50px;
+    font-style: italic; 
+  }
