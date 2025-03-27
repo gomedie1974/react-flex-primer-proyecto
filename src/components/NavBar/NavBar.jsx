@@ -1,25 +1,42 @@
-import './NavBar.css'
+import React, { useState } from 'react';
+import './NavBar.css';
 import CartWidget from "../CartWidget/CartWidget";
 import Logo from "../Logo/Logo";
 
 
 function NavBar() {
-  return (
-     <header>
-        <br />
-        <nav className='nav-bar'>
-          <span><Logo/></span>
-           <ul className='nav-bar-items'> 
-            <li><button className='btn btn-primary'>Inicio</button>
-            </li>
-            <li><button className='btn btn-secondary'><span style={{color:'white'}}>Productos</span></button></li>
-            <li><button className='btn btn-secondary'><span style={{color:'white'}}>Contacto</span></button></li>              
-          </ul>
-          <span><CartWidget/></span>
-        </nav>
-      </header>  
-   )
-}
- 
+  const [menuActive, setMenuActive] = useState(false);
 
-export default NavBar
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
+  return (
+    <header>
+      <nav className='nav-bar'>
+        <span><Logo /></span>
+        
+        {/* Botón de menú hamburguesa para pantallas pequeñas */}
+        <div className='hamburger' onClick={toggleMenu}>
+          <span>&#9776;</span> {/* Icono de hamburguesa */}
+        </div>
+
+        {/* Lista de navegación */}
+        <ul className={`nav-bar-items ${menuActive ? 'active' : ''}`}>
+          <li>Inicio</li>
+          <li>Productos</li>
+          <li>Contacto</li>
+          
+          {/* CartWidget dentro del menú hamburguesa */}
+          <li>
+            <div className="cart-widget">
+              <CartWidget />
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
+
+export default NavBar;

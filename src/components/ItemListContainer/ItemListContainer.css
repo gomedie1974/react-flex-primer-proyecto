@@ -1,15 +1,9 @@
-.greetings-text {
-    font-size: 2rem;  
-    color: #ff5733;  
-    text-align: center;  
-    margin-top: 50px;  
-    font-weight: bold;  
-  }
-  
-  .greetings1-text{
-    font-size: 2rem;
-    color: #555;
-    text-align: center;
-    margin-top: 50px;
-    font-style: italic; 
-  }
+.container-productos {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las cards se envuelvan a la siguiente línea si no caben en una fila */
+  justify-content: space-around; /* Alinea las cards con espacios uniformes */
+  gap: 20px; /* Espacio entre las cards */
+  width: 100%;
+  padding: 20px; /* Ajusta el espacio interior si es necesario */
+}
+
