@@ -4,5 +4,5 @@ import { productos } from "./productos";
 export const fetchData = () => new Promise((resolve) => {
     setTimeout(() =>{ 
         resolve(productos);
-    }, 2000);
-}, []);   
+    }, 1500);
+});   

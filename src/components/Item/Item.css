@@ -1,11 +1,11 @@
 .item-productos {
-    display: block; /* Cambiar de flex a block para evitar distorsiones */
-    width: 250px; /* Establecer un ancho fijo para las cards */
+    display: block; /* Cambio de flex a block si hay distorsion */
+    width: 250px;  
     padding: 15px;
-    border: 1px solid #ddd; /* Agregar un borde para definir las cards */
-    border-radius: 8px; /* Opcional: bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para hacerlas más atractivas */
-    background-color: white; /* Color de fondo */
-    text-align: center; /* Centra el texto dentro de la card */
+    border: 1px solid #ddd;  
+    border-radius: 8px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+    background-color: white;  
+    text-align: center;  
   }
   

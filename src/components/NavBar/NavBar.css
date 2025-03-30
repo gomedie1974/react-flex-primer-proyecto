@@ -2,8 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 1px 50px;
+  background-color: rgb(233, 220, 202);
+  position: fixed;
+  width: 100%;  
+  top: 0;
+  z-index: 1000;
  }
+ body {
+  padding-top: 150px; /* Asegura que el contenido no quede oculto bajo el navbar */
+}
 
 .nav-bar-items {
   display: flex;

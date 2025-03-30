@@ -1,5 +1,5 @@
 .item-detail{  
-  display: flex;
+  display: block;
   justify-content: space-around;
   align-items: center;
   width: 100%;
@@ -7,4 +7,10 @@
   padding: 2rem;
   gap: 2rem;  
   }
-  
+  .card-img-top {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    max-width: 300px; /* Tamaño máximo para que no sea gigante */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Evita márgenes inesperados */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}

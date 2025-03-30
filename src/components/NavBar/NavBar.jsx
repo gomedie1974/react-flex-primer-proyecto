@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './NavBar.css';
 import CartWidget from "../CartWidget/CartWidget";
 import Logo from "../Logo/Logo";
-
+import { Link } from 'react-router-dom';
+ 
 
 function NavBar() {
   const [menuActive, setMenuActive] = useState(false);
@@ -23,16 +24,27 @@ function NavBar() {
 
         {/* Lista de navegación */}
         <ul className={`nav-bar-items ${menuActive ? 'active' : ''}`}>
-          <li>Inicio</li>
-          <li>Productos</li>
-          <li>Contacto</li>
+          <Link to="/">
+            <li>Inicio</li>
+          </Link>
           
-          {/* CartWidget dentro del menú hamburguesa */}
-          <li>
-            <div className="cart-widget">
-              <CartWidget />
-            </div>
-          </li>
+          <Link to="/categoria/fragancias">
+            <li>Fragancias</li>
+          </Link>
+          
+          <Link to="/categoria/solares">
+            <li>Solares</li>
+          </Link>
+
+          <Link to="/categoria/cremas">
+            <li>Cremas</li>
+          </Link>
+          
+          <Link to="/carrito">
+            <CartWidget/>
+          </Link>
+          
+           
         </ul>
       </nav>
     </header>
