@@ -17,35 +17,21 @@ function NavBar() {
       <nav className='nav-bar'>
         <span><Logo /></span>
         
-        {/* Botón de menú hamburguesa para pantallas pequeñas */}
-        <div className='hamburger' onClick={toggleMenu}>
-          <span>&#9776;</span> {/* Icono de hamburguesa */}
-        </div>
-
+        
         {/* Lista de navegación */}
         <ul className={`nav-bar-items ${menuActive ? 'active' : ''}`}>
-          <Link to="/">
-            <li>Inicio</li>
-          </Link>
-          
-          <Link to="/categoria/fragancias">
-            <li>Fragancias</li>
-          </Link>
-          
-          <Link to="/categoria/solares">
-            <li>Solares</li>
-          </Link>
+          <li><Link to="/">Inicio</Link></li>
+          <li><Link to="/categoria/Fragancias">Fragancias</Link></li>
+          <li><Link to="/categoria/Solares">Solares</Link></li>
+          <li><Link to="/categoria/Cremas">Cremas</Link></li>
+          <li><Link to="/carrito"><CartWidget /></Link></li> 
 
-          <Link to="/categoria/cremas">
-            <li>Cremas</li>
-          </Link>
-          
-          <Link to="/carrito">
-            <CartWidget/>
-          </Link>
-          
-           
-        </ul>
+      </ul>
+      <div className="hamburger" onClick={toggleMenu}>
+        <span>&#9776;</span>
+      </div>
+
+
       </nav>
     </header>
   );

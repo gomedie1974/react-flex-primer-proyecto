@@ -3,58 +3,75 @@
   justify-content: space-between;
   align-items: center;
   padding: 1px 50px;
-  background-color: rgb(233, 220, 202);
+  background-color: rgb(255, 239, 221);
   position: fixed;
-  width: 100%;  
+  width: 100%;
   top: 0;
   z-index: 1000;
- }
- body {
-  padding-top: 150px; /* Asegura que el contenido no quede oculto bajo el navbar */
+}
+body {
+  margin: 0;
+  padding-top: 100px; /* Ajustalo a la altura real del navbar */
 }
 
 .nav-bar-items {
   display: flex;
+  align-items: center;  /* Alinea verticalmente los elementos */
   list-style-type: none;
   margin: 0;
   padding: 0;
-  flex-direction: row;
+  gap: 40px; /* Espaciado entre ítems */
+  
 }
 
-.nav-bar-items li {
-  margin: 0 15px;
+.nav-bar-items li a {
+  color: black; /* Color base */
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.nav-bar-items button {
-   border: none;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
+.nav-bar-items li a:hover {
+  color: #19005e; /* Cambia este valor por el color que prefieras */
+  text-transform: uppercase;
+
 }
 
-/* Estilos para el carrito  */
+.nav-bar-items li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* Estilo del ícono carrito si lo necesitás más preciso */
 .cart-widget {
   display: flex;
   align-items: center;
-  justify-content: center;
-   padding: 5px;
-  border-radius: 5px;
-  color: rgb(0, 0, 0);
-  margin-top: 10px;  
 }
 
- 
+/* Botón de hamburguesa */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  font-size: 30px;
+}
+
 @media (max-width: 768px) {
   .nav-bar {
     flex-direction: column;
-    align-items: flex-start;  
+    align-items: flex-start;
   }
 
   .nav-bar-items {
     display: none;
     flex-direction: column;
     width: 100%;
-    padding-left: 10px;  
+    padding-left: 10px;
+    gap: 5px; /* Espacio vertical entre ítems */
   }
 
   .nav-bar-items.active {
@@ -63,30 +80,25 @@
 
   .nav-bar-items li {
     width: 100%;
-    margin: 10px 0;
-    text-align: left;  
+    margin: 0; /* Eliminar márgenes */
+    padding: 4px 0; /* Espaciado más controlado */
+    text-align: left;
+  }
+
+  .nav-bar-items li a {
+    display: inline-block;
+    padding: 4px 0;
   }
 
   .hamburger {
     display: block;
     cursor: pointer;
+    align-self: flex-start;
+    margin: 10px 0 0 10px;
   }
 
   .hamburger span {
     font-size: 30px;
     color: rgb(0, 0, 0);
-  }
-
-   .nav-bar-items li .cart-widget {
-    width: auto;  
-    margin-top: 15px;  
-    text-align: left; 
-  }
-}
-
-/*  más grandes */
-@media (min-width: 769px) {
-  .hamburger {
-    display: none;
   }
 }

@@ -1,7 +1,7 @@
 export const productos = [
     {
         id: 1,
-        nombre: "212",
+        nombre: "212 ",
         categoria: "Fragancias",
         sexo: "Masculino",
         marca: "Carolina Herrera",

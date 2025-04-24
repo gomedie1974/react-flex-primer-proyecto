@@ -1,20 +1,14 @@
 import { Link } from 'react-router-dom';
+import { useAppContext } from '../../context/context';
 import './Item.css';
 
-function Item({productos, filtrarProductos }) {
+function Item({productos}) {
 
     const {id, imagen, nombre, categoria, precio, descripcion, stock } = productos
 
-    function agregarAlCarrito(prod){
-      const nuevoProducto = {
-        ...prod, /* spread operator */
-        cantidad: 1,
-      }
-      console.log("vas a agregar el producto", nuevoProducto)
-      console.log(filtrarProductos)
-    }
+    const { agregarAlCarrito } = useAppContext(); 
 
-      return(
+    return(
         <div className='card item-productos'>
             {/* Imagen */}
             <img src={`/imagenes/fragancias/${imagen}`} alt={nombre} className="card-img-top" />
@@ -23,9 +17,8 @@ function Item({productos, filtrarProductos }) {
             <p>Precio: ${precio}</p>
             <p>Descripcion: {descripcion}</p> 
             <p>Quedan {stock} disponibles</p>
-            <button className='btn btn-secondary my-2' onClick={()=> agregarAlCarrito(productos)}>Agregar al carrito</button>
+            <button className='btn btn-secondary my-2' onClick={()=> agregarAlCarrito(productos, 1)}>Agregar al carrito</button>
     
-
             <Link to={`/detalle/${id}`}>
               <button className='btn btn-secondary my-2'>Ver detalle</button>
             </Link>
