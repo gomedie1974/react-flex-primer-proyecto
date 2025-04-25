@@ -15,9 +15,9 @@ function Cart() {
     };
   
     return (
-      <div>
+      <div className="cart-container">
         <h2>Carrito de Compras</h2>
-        <div>
+          <div>
           {carrito.length === 0 ? (
             <p>No tienes productos en el carrito</p>
           ) : (

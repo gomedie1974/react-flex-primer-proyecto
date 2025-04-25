@@ -4,21 +4,19 @@ import { addDoc, collection } from "firebase/firestore";
 import { db } from "../../firebaseConfig";
 import { useEffect, useState } from "react";
 
-function FinalizarOrden() {
+function FinalizarOrdenFin() {
   const { carrito } = useAppContext();
   const navigate = useNavigate();
   const { nombre, telefono, mail } = useParams();
-  const [loading, setLoading] = useState(true); 
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-
     if (carrito.length === 0) {
       alert("No tienes productos en el carrito.");
       navigate("/carrito");
       return;
     }
 
-    
     const crearOrden = async () => {
       const nuevaOrden = {
         nombre: nombre || "Desconocido",
@@ -29,25 +27,23 @@ function FinalizarOrden() {
 
       try {
         const ordenesCollection = collection(db, "ordenes");
-        const docRef = await addDoc(ordenesCollection, nuevaOrden);
-        console.log("Orden creada con ID:", docRef.id);
-        navigate("/orden-completada");  
+        await addDoc(ordenesCollection, nuevaOrden);
+        setLoading(false);
+        // Pasamos el carrito en el estado de la navegación a la página de detalle
+        navigate(`/detalle-orden/${nombre}`, { state: { productos: carrito } });
       } catch (err) {
         console.error("Error al crear la orden:", err);
         alert("Hubo un error al procesar la compra.");
-      } finally {
-        setLoading(false);  
+        setLoading(false);
       }
     };
 
     crearOrden();
   }, [carrito, mail, navigate, nombre, telefono]);
 
-  if (loading) {
-    return <p>Procesando tu orden...</p>;
-  }
+  if (loading) return <p>Procesando tu orden...</p>;
 
-  return null;
+  return null; // Ya no es necesario renderizar nada más
 }
 
-export default FinalizarOrden;
+export default FinalizarOrdenFin;

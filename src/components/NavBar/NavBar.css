@@ -3,11 +3,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 1px 50px;
-  background-color: rgb(255, 239, 221);
+  background-color: white;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body {
   margin: 0;

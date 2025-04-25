@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../../firebaseConfig";
-import "./CheckoutForm.css"; // No olvides importar el CSS
+import "./CheckoutForm.css"; 
 import { useAppContext } from "../../context/context";
 
 
@@ -26,6 +26,7 @@ function CheckoutForm() {
       alert("Por favor, completa todos los campos.");
       return;
     }
+      navigate(`/finalizar-orden/${nombre}/${telefono}/${mail}`);
 
     setLoading(true);
 

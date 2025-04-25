@@ -1,0 +1,37 @@
+.detalle-orden {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.detalle-orden h2 {
+  color: green;
+  font-size: 24px;
+}
+
+.detalle-orden h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.detalle-orden ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.detalle-orden ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.detalle-orden button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.detalle-orden button:hover {
+  background-color: #45a049;
+}
