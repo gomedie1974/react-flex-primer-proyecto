@@ -3,6 +3,8 @@ import { useAppContext } from "../../context/context";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../../firebaseConfig";
 import { useEffect, useState } from "react";
+import './FinalizarOrdenFin.css';
+
 
 function FinalizarOrdenFin() {
   const { carrito } = useAppContext();
@@ -41,7 +43,15 @@ function FinalizarOrdenFin() {
     crearOrden();
   }, [carrito, mail, navigate, nombre, telefono]);
 
-  if (loading) return <p>Procesando tu orden...</p>;
+  if (loading) {
+    return (
+      <div className="loader-container">
+        <div className="spinner"></div>
+        <p>Procesando tu orden...</p>
+      </div>
+    );
+  }
+  
 
   return null; // Ya no es necesario renderizar nada más
 }
