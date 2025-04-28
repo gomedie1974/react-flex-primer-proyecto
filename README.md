@@ -1,43 +1,43 @@
-* Descripción del proyecto
 
-    Este proyecto es una tienda online desarrollada con React que permite a los usuarios navegar por productos, agregarlos al carrito, completar el proceso de compra y recibir un detalle de su orden. Los datos se almacenan en Firebase Firestore.
+# Proyecto Final de REACTJS
 
-* Herramientas utilizadas
-    - React
+Este proyecto es una tienda online desarrollada con ReactJS hecha con VITE y deployada en Netlify.
+
+
+## Instalación
+
+Para instalar el projecto lo descargamos y luego ejecutamos 
+
+```bash
+  npm install 
+```
+    
+## Herramientas usadas para este proyecto
+    - React 
     - React Router DOM
     - Firebase (Firestore)
     - Bootstrap Icons
     - CSS personalizado
-    - FormSubmit (para suscripción al newsletter)
+    - FormSubmit 
     - Vite
+    - Netlify
 
-* Funcionalidades principales
-    - Filtrado de productos por categoría
-    - Vista de detalle de cada producto
-    - Carrito de compras con suma dinámica
-    - Formulario de checkout con validación
-    - Almacenamiento de órdenes en Firestore
-    - Pantalla final con detalle de compra descargable
-    - Footer con formulario de suscripción y mapa de ubicación
 
-* Estructura del proyecto
-src/
-│
-├── components/
-│   ├── Cart/
-│   ├── CheckoutForm/
-│   ├── FinalizarOrdenFin/
-│   ├── Footer/
-│   ├── Home/
-│   ├── ItemDetail/
-│   ├── ItemListContainer/
-│   ├── ModalOrden/
-│   └── NavBar/
-│
-├── context/
-│   └── context.jsx
-│
-├── firebaseConfig.js
-├── App.jsx
-└── main.jsx
+## Funcionalidades principales
+- Filtrado de productos por categoría
+- Vista de detalle de cada producto
+- Carrito de compras con suma dinámica
+- Formulario de checkout con validación
+- Almacenamiento de órdenes en Firestore
+- Pantalla final con detalle de compra descargable
+- Footer con formulario de suscripción y mapa de ubicación
+## Autor
+
+- [Diego Gomez](https://www.github.com/gomedie1974)
+
+
+## Link Netlify
+
+https://dg2025.netlify.app/
+
 

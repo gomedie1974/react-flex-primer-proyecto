@@ -1,15 +1,15 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
- 
 
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyDXgype2SXsKl3fyYZcJzA3ptE97R31Avg",
-  authDomain: "reactallinshop.firebaseapp.com",
-  projectId: "reactallinshop",
-  storageBucket: "reactallinshop.firebasestorage.app",
-  messagingSenderId: "404476347730",
-  appId: "1:404476347730:web:17afe001c7e03078e4268b"
+const {VITE_API_KEY, VITE_AUTH_DOMAIN, VITE_PROJECT_ID, VITE_STORAGE_BUCKET, VITE_MESSAGEING_SENDER_ID, VITE_APP_ID} = import.meta.env;
+
+ const firebaseConfig = {
+  apiKey: VITE_API_KEY ,
+  authDomain: VITE_AUTH_DOMAIN ,
+  projectId: VITE_PROJECT_ID ,
+  storageBucket: VITE_STORAGE_BUCKET,
+  messagingSenderId: VITE_MESSAGEING_SENDER_ID,
+  appId: VITE_APP_ID 
 };
 
 const app = initializeApp(firebaseConfig);
