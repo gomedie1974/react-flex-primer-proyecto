@@ -12,11 +12,26 @@ import CheckoutForm from './components/CheckoutForm/CheckoutForm';
 import Footer from './components/Footer/Footer';
 import FinalizarOrdenFin from './components/FinalizarOrdenFin/FinalizarOrdenFin';
 import DetalleOrden from './components/DetalleOrden/DetalleOrden';
+import { ToastContainer, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
   return (
     <ContextProvider>
+       <ToastContainer
+        position="top-right"
+        autoClose={1500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Bounce}
+      />
       <NavBar />
       <Routes>
         <Route path="/" element={<Home/>} />   

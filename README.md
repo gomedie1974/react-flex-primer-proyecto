@@ -1,4 +1,3 @@
-
 # Proyecto Final de REACTJS
 
 Este proyecto es una tienda online desarrollada con ReactJS hecha con VITE y deployada en Netlify.
@@ -20,6 +19,7 @@ Para instalar el projecto lo descargamos y luego ejecutamos
     - CSS personalizado
     - FormSubmit 
     - Vite
+    - Libreria Toastify 
     - Netlify
 
 
@@ -31,13 +31,15 @@ Para instalar el projecto lo descargamos y luego ejecutamos
 - Almacenamiento de órdenes en Firestore
 - Pantalla final con detalle de compra descargable
 - Footer con formulario de suscripción y mapa de ubicación
-## Autor
 
+## Variables de entorno
+Creado archivo .env y realizdo el deploy a Netlify
+
+
+## Autor
 - [Diego Gomez](https://www.github.com/gomedie1974)
 
 
 ## Link Netlify
 
 https://dg2025.netlify.app/
-
-

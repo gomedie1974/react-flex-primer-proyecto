@@ -19,7 +19,7 @@ function Cart() {
         <h2>Carrito de Compras</h2>
           <div>
           {carrito.length === 0 ? (
-            <p>No tienes productos en el carrito</p>
+            <h5>No tienes productos en el carrito</h5>
           ) : (
             <div>
               {carrito.map((item) => (
@@ -36,16 +36,16 @@ function Cart() {
                       <button
                         onClick={() => actualizarCantidad(item.id, item.cantidad - 1)}
                         disabled={item.cantidad <= 1}
-                        className="btn btn-primary"
+                        className="btn btn-secondary"
                       >
-                        -
+                       <b> -</b> 
                       </button>
                       <span>{item.cantidad}</span>
                       <button
                         onClick={() => actualizarCantidad(item.id, item.cantidad + 1)}
-                        className="btn btn-primary"
+                        className="btn btn-secondary"
                       >
-                        +
+                       <b> +</b> 
                       </button>
                     </div>
                     <button
@@ -60,7 +60,7 @@ function Cart() {
               <div className="cart-total">
                 <h3>Total: ${calcularTotal()}</h3>
               </div>
-              <button className="btn btn-secondary" onClick={() => navigate(-1)}>
+              <button className="btn btn-primary" onClick={() => navigate(-1)}>
                     Volver 
               </button>
               <button

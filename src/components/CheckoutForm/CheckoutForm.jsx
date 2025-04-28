@@ -63,12 +63,12 @@ function CheckoutForm() {
 
   return (
     <div className="checkout-form">
-      <h2>Formulario de Compra</h2>
+      <h2>Formulario de Compra 🛍</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Nombre y Apellido"
-          value={nombre}
+          value={nombre}  
           onChange={(e) => setNombre(e.target.value)}
         />
         <input

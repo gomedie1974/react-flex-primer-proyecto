@@ -1,6 +1,7 @@
 import { createContext, useContext, useState } from "react";
+import { toast } from "react-toastify";
 
-
+ 
 const AppContext = createContext();
 
 export const useAppContext = () => useContext(AppContext);
@@ -24,8 +25,9 @@ export const ContextProvider = (props) => {
     } else {
       setCarrito([...carrito, nuevoProducto]);
     }
+    toast("Producto agregado")
   }
-
+  
 
   function eliminarDelCarrito(id) {
     setCarrito(carrito.filter((item) => item.id !== id));

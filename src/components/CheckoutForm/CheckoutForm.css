@@ -1,17 +1,18 @@
+
 .checkout-form {
     max-width: 500px;
     margin: 2rem auto;
     padding: 2rem;
-    background-color: #fdfdfd;
+    background-color: #111214;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
+  } 
   
   .checkout-form h2 {
     text-align: center;
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
-    color: #333;
+    color: #ffffff;
   }
   
   .checkout-form form {
