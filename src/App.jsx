@@ -14,16 +14,19 @@ import FinalizarOrdenFin from './components/FinalizarOrdenFin/FinalizarOrdenFin'
 import DetalleOrden from './components/DetalleOrden/DetalleOrden';
 import { ToastContainer, Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Promocion from './components/Promocion/Promocion';
+import Contacto from './components/Contacto/Contacto'; 
+
 
 
 function App() {
   return (
     <ContextProvider>
        <ToastContainer
-        position="top-right"
+        position="bottom-center"
         autoClose={1500}
         hideProgressBar={false}
-        newestOnTop={false}
+        newestOnTop
         closeOnClick={false}
         rtl={false}
         pauseOnFocusLoss
@@ -31,8 +34,10 @@ function App() {
         pauseOnHover
         theme="light"
         transition={Bounce}
-      />
+        />
+
       <NavBar />
+      <Promocion />
       <Routes>
         <Route path="/" element={<Home/>} />   
         <Route path="/categoria/:categoria" element={<ItemListContainer />} />   
@@ -42,6 +47,7 @@ function App() {
         <Route path="/orden-completada" element={<h2> Compra realizada con éxito</h2>} />
         <Route path="/404" element={<NotFound />} /> 
         <Route path="*" element={<NotFound />} /> 
+        <Route path="/contacto" element={<Contacto />} />
         <Route path="/finalizar-orden/:nombre/:telefono/:mail" element={<FinalizarOrdenFin />} />  
         <Route path="/detalle-orden/:nombre" element={<DetalleOrden />} />
 

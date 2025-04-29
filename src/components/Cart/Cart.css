@@ -108,3 +108,13 @@ button.btn {
 .btn-secondary:hover {
   background-color: #999;
 }
+.cart-empty {
+  text-align: center;
+  padding: 2rem;
+}
+
+.cart-empty-image {
+  width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+}

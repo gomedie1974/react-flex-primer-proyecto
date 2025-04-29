@@ -1,6 +1,6 @@
 .container-productos {
   display: flex;
-  flex-wrap: wrap; /* Permite que las cards se envuelvan a la siguiente línea si no caben en una fila */
+  flex-wrap: wrap; 
   justify-content: space-around; 
   gap: 20px; 
   width: 100%;

@@ -1,22 +1,42 @@
-/* Home.css */
-
 .home-container {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Asegura que el carousel tome el ancho completo */
+.carousel {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Estiliza las imágenes dentro del carrusel */
+.carousel-item img,
+.d-block {
+  width: 100%;
+  height: auto;
+  max-height: 600px; /* Limite opcional para pantallas grandes */
+  object-fit: cover;
+}
+
+/* Ajustes para pantallas más chicas */
+@media (max-width: 768px) {
+  .carousel-item img,
+  .d-block {
+    height: auto;
+    max-height: 300px;
   }
-  
-  /* Estilos para forzar que el carrusel ocupe todo el ancho */
-  .carousel {
-    width: 100vw;
-    max-width: 100%;
-    margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .carousel-item img,
+  .d-block {
+    height: auto;
+    max-height: 200px;
   }
-  
-  .carousel-item img {
-    width: 100vw;
-    height: 400px; /* o el alto que prefieras */
-    object-fit: cover;
-  }
+}
+
     .newsletter {
     background-color: #f8f8f8;
     padding: 2rem;
@@ -61,9 +81,8 @@
     align-items: center;
     gap: 2rem;
     padding: 2rem;
-    flex-wrap: wrap; /* Esto permite que se ajusten en pantallas pequeñas */
+    flex-wrap: wrap;  
     font-family: 'Times New Roman', Times, serif;
-    
   }
   
   .imagen-texto-item {
@@ -75,13 +94,13 @@
   }
   
   .imagen-item {
-    width: 30%; /* Ajusta el tamaño de la imagen */
+    width: 30%;  
     height: auto;
     border-radius: 8px;
   }
   
   .texto-contenido {
-    width: 55%; /* Ajusta el tamaño del texto */
+    width: 55%; 
     text-align: justify;
     
   }
@@ -101,16 +120,16 @@
   
   @media (max-width: 768px) {
     .imagen-texto-item {
-      flex-direction: column; /* Apila imagen y texto en pantallas más pequeñas */
+      flex-direction: column; 
       align-items: center;
     }
   
     .imagen-item {
-      width: 80%; /* Imagen más grande en pantallas pequeñas */
+      width: 80%;  
     }
   
     .texto-contenido {
-      width: 100%; /* El texto ocupa todo el ancho */
+      width: 100%;  
       text-align: center;
     }
   }

@@ -34,7 +34,6 @@ function Home() {
       </Carousel>
  
 
-      {/* Nueva sección de imagen y texto */}
       <div className="imagen-texto-container">
         <div className="imagen-texto-item">
           <img src="/imagenes/fragancias/1.jpg" alt="Imagen ejemplo" className="imagen-item" />

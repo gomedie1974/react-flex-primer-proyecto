@@ -19,8 +19,16 @@ function Cart() {
         <h2>Carrito de Compras</h2>
           <div>
           {carrito.length === 0 ? (
-            <h5>No tienes productos en el carrito</h5>
-          ) : (
+          <div className="cart-empty">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/11010/11010851.png"
+              alt="Carrito vacío"
+              className="cart-empty-image"
+            />
+            <h5>¡Ups! No tienes productos en el carrito</h5>
+          </div>
+
+        ) : (
             <div>
               {carrito.map((item) => (
                 <div key={item.id} className="cart-item">

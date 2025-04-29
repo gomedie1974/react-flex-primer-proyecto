@@ -1,9 +1,8 @@
 .footer {
     background-color: #222;
     color: #fff;
-    padding: 4rem 2rem;
+    padding: 2rem 1rem;
     margin-top: 2rem;
-    border-top: 2px solid #00aced; /* Añadimos un borde superior de color destacado */
   }
   
   .footer-content {
@@ -159,3 +158,51 @@
     100% { opacity: 0; bottom: 10px; }
   }
     
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-map iframe {
+      max-width: 100%;
+      height: 180px;
+    }
+  
+    .footer-newsletter {
+      width: 100%;
+      padding: 1rem 0;
+    }
+  
+    .newsletter-form {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .newsletter-form input[type="email"] {
+      width: 80%;
+      max-width: 300px;
+    }
+  
+    .newsletter-form button {
+      width: 50%;
+      max-width: 200px;
+    }
+  
+    .footer-social {
+      width: 100%;
+      padding: 1rem 0;
+    }
+  
+    .social-icons {
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  
+    .footer-credit {
+      margin-top: 2rem;
+    }
+  }
+  
+  
