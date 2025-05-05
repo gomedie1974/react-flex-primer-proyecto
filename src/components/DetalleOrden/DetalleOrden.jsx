@@ -1,9 +1,9 @@
 import { useLocation, useParams } from "react-router-dom";
  
 function DetalleOrden() {
-  const { nombre } = useParams(); // Recibimos el nombre desde la URL
+  const { nombre } = useParams(); // Recibo el nombre desde la URL
   const location = useLocation();
-  const { productos } = location.state || {}; // Obtenemos los productos desde el estado de la navegación
+  const { productos } = location.state || {}; // Obtengo los productos desde el estado de la navegación
 
   return (
     <div className="detalle-orden, m-4">

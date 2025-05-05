@@ -13,27 +13,27 @@
 }
 body {
   margin: 0;
-  padding-top: 120px; /* Ajustalo a la altura real del navbar */
+  padding-top: 120px; 
 }
 
 .nav-bar-items {
   display: flex;
-  align-items: center;  /* Alinea verticalmente los elementos */
+  align-items: center;   
   list-style-type: none;
   margin: 0;
   padding: 0;
-  gap: 40px; /* Espaciado entre ítems */
+  gap: 40px;  
   
 }
 
 .nav-bar-items li a {
-  color: black; /* Color base */
+  color: black;  
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .nav-bar-items li a:hover {
-  color: #19005e; /* Cambia este valor por el color que prefieras */
+  color: #19005e;  
   text-transform: uppercase;
 
 }
@@ -46,7 +46,7 @@ body {
   font-weight: 500;
 }
 
-/* Estilo del ícono carrito si lo necesitás más preciso */
+/* Estilo del ícono carrito */
 .cart-widget {
   display: flex;
   align-items: center;
@@ -73,7 +73,7 @@ body {
     flex-direction: column;
     width: 100%;
     padding-left: 10px;
-    gap: 5px; /* Espacio vertical entre ítems */
+    gap: 5px;  
   }
 
   .nav-bar-items.active {
@@ -82,8 +82,8 @@ body {
 
   .nav-bar-items li {
     width: 100%;
-    margin: 0; /* Eliminar márgenes */
-    padding: 4px 0; /* Espaciado más controlado */
+    margin: 0;  
+    padding: 4px 0;  
     text-align: left;
   }
 

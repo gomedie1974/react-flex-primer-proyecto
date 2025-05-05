@@ -53,7 +53,7 @@ function FinalizarOrdenFin() {
   }
   
 
-  return null; // Ya no es necesario renderizar nada más
+  return null; // no es necesario renderizar nada más
 }
 
 export default FinalizarOrdenFin;

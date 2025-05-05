@@ -8,8 +8,8 @@ body {
   flex: 1;
 }
 .item-detail {
-  max-width: 600px;      /* o 400px si querés más pequeño */
-  margin: 3rem auto;     /* centra horizontalmente */
+  max-width: 600px;      
+  margin: 3rem auto;     
   padding: 2rem;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -18,11 +18,11 @@ body {
 }
 
   .card-img-top {
-    width: 100%; /* Ajusta el ancho al 100% del contenedor */
-    max-width: 300px; /* Tamaño máximo para que no sea gigante */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Evita márgenes inesperados */
-    border-radius: 10px; /* Bordes redondeados opcionales */
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    display: block; 
+    border-radius: 10px; 
 }
 .botones-acciones {
   display: flex;

@@ -11,7 +11,7 @@ function Contacto() {
     mensaje: ''
   });
 
-  const [mostrarMensaje, setMostrarMensaje] = useState(false); // Estado para manejar el mensaje de éxito
+  const [mostrarMensaje, setMostrarMensaje] = useState(false); 
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -25,10 +25,10 @@ function Contacto() {
     e.preventDefault();
     console.log('Datos enviados:', formData);
     setMostrarMensaje(true); // Mostrar el mensaje de éxito
-    setFormData({ nombre: '', email: '', telefono: '', mensaje: '' }); // Reiniciar formulario
+    setFormData({ nombre: '', email: '', telefono: '', mensaje: '' }); // Reinicia formulario
 
     setTimeout(() => {
-      setMostrarMensaje(false); // Ocultar el mensaje después de 5 segundos
+      setMostrarMensaje(false); // Oculto el mensaje después de 5 segundos
     }, 5000);
   };
 

@@ -21,7 +21,7 @@ function CheckoutForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Evitar enviar la orden si no hay datos completos
+    // Evito enviar la orden si no hay datos completos
     if (!nombre || !domicilio || !localidad || !telefono || !mail) {
       alert("Por favor, completa todos los campos.");
       return;
